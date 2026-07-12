@@ -1,7 +1,8 @@
 streamlit
-tensorflow
+tensorflow>=2.16.1
 numpy
 pandas
 plotly
 graphviz
 scikit-learn
+keras>=3.0.0
