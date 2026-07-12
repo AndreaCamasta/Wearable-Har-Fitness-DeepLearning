@@ -1,3 +1,8 @@
+import os
+# --- DISATTIVAZIONE XLA PER EVITARE SEGMENTATION FAULT IN CLOUD ---
+os.environ['TF_XLA_FLAGS'] = '--tf_xla_auto_jit=-1'
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 import streamlit as st
 import tensorflow as tf
 import numpy as np
